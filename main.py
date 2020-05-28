@@ -3,6 +3,7 @@ from functools import partial
 from re import match
 from time import sleep
 from typing import Dict, Tuple, List, Optional
+from urllib.parse import urlsplit
 
 from bs4 import BeautifulSoup, Tag
 from requests import Session, Response, RequestException
@@ -62,8 +63,8 @@ def get_page(cont: bytes) -> Tuple[List[str], Optional[str]]:
 
     heading = tree.find('h1', 'firstHeading')
     ids = [i.strip() for i in heading.text.split(',')]
-    if all(i.startswith('std::') for i in ids):
-        # everything's fine
+    if any(i.startswith('std::') for i in ids):
+        ids = [i.replace('std::', '') for i in ids]
         pass
     else:
         # this page is likely to be another table of content
@@ -74,7 +75,7 @@ def get_page(cont: bytes) -> Tuple[List[str], Optional[str]]:
     if header:
         header = header.parent.find('code').find('a').text.strip('<>')
 
-    return [id_strip(i[5:]) for i in ids], header
+    return [id_strip(i) for i in ids], header
 
 
 if __name__ == '__main__':
@@ -84,7 +85,14 @@ if __name__ == '__main__':
     header_id_map = {}
 
     # URL could be duplicated here
-    for _uri in set(parse_toc().values()):
+    _url_id_map = {}
+    for _id, _uri in parse_toc().items():
+        if _uri not in _url_id_map:
+            _url_id_map[_uri] = set()
+        _url_id_map[_uri].add(_id)
+    _failed = []
+    _success_url_header_map = {}
+    for _uri, _ids in _url_id_map.items():
         _resp = None
         while True:
             try:
@@ -93,13 +101,21 @@ if __name__ == '__main__':
             except RequestException:
                 print('retrying {}'.format(_uri))
                 sleep(1)
-        _ids, _header = get_page(_resp.content)
+        _detail_ids, _header = get_page(_resp.content)
         if _header is None:
-            print('no header for {} in {}'.format(_ids, _uri))
+            if _detail_ids:
+                _failed.append(_uri)
             continue
+        _success_url_header_map[_uri] = _header
         if _header not in header_id_map:
-            header_id_map[_header] = []
-        header_id_map[_header] += _ids
+            header_id_map[_header] = _ids
+        header_id_map[_header] |= set(_detail_ids)
 
-    with open('map.json', 'w') as _f:
-        json.dump(header_id_map, _f, indent=2)
+    for _failed_uri in _failed:
+        for _uri, _header in _success_url_header_map.items():
+            if _failed_uri.startswith(_uri):
+                # assume these two are in same header
+                header_id_map[_header] |= _url_id_map[_failed_uri]
+
+    with open('map.json', 'w') as _failed_uri:
+        json.dump({k: list(v) for k, v in header_id_map.items()}, _failed_uri)
