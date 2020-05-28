@@ -108,8 +108,9 @@ if __name__ == '__main__':
             continue
         _success_url_header_map[_uri] = _header
         if _header not in header_id_map:
-            header_id_map[_header] = _ids
-        header_id_map[_header] |= set(_detail_ids)
+            header_id_map[_header] = set()
+        # id from table of content and from detail page
+        header_id_map[_header] |= set(_detail_ids) | _ids
 
     for _failed_uri in _failed:
         for _uri, _header in _success_url_header_map.items():
