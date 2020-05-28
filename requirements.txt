@@ -1,0 +1,3 @@
+requests-futures
+beautifulsoup4
+requests
