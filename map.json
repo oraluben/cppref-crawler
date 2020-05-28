@@ -1,0 +1,257 @@
+{
+  "cwchar": [
+    "wcsxfrm", "wcscmp", "wcscat", "fgetws", "wcschr", "wcsrtombs", "mbrlen", "fputwc", "vwscanf", "vfwscanf", "vswscanf", "vwprintf", "vfwprintf", "vswprintf", "wcsspn", "wcsrchr", "wcsncpy", "putwchar", "btowc", "wmemcmp", "wcslen", "wcstok", "wcrtomb", "wprintf", "fwprintf", "swprintf", "fputws", "fgetwc", "wmemmove", "getwchar", "wctob", "mbsinit", "wmemset", "wmemchr", "mbsrtowcs", "wcsstr", "wcsncat", "ungetwc", "wscanf", "fwscanf", "swscanf", "wcspbrk", "wcstoul", "wcstoull", "wcsftime", "wcscoll", "wcstof", "wcstod", "wcstold", "mbrtowc", "wcstol", "wcstoll", "wcscspn", "wcscpy", "fwide", "wcsncmp", "wmemcpy"
+  ],
+  "locale": [
+    "numpunct_byname", "isdigit", "ctype_base", "isgraph", "time_put_byname", "use_facet", "collate_byname", "toupper", "isspace", "isprint", "ctype", "codecvt_byname", "messages", "time_get_byname", "num_get", "time_base", "tolower", "messages_base", "ispunct", "locale", "wstring_convert", "collate", "numpunct", "has_facet", "money_put", "isalnum", "wbuffer_convert", "money_base", "money_get", "codecvt", "moneypunct", "ctype_byname", "isupper", "iscntrl", "isalpha", "codecvt_base", "isxdigit", "num_put", "time_put", "moneypunct_byname", "messages_byname", "isblank", "time_get", "islower"
+  ],
+  "cwctype": [
+    "towlower", "iswupper", "iswlower", "iswctype", "iswprint", "iswdigit", "iswalpha", "iswgraph", "iswblank", "towctrans", "wctype", "iswspace", "towupper", "iswalnum", "iswpunct", "wctrans", "iswxdigit", "iswcntrl"
+  ],
+  "fstream": [
+    "basic_ofstream", "basic_fstream", "basic_filebuf", "basic_ifstream"
+  ],
+  "iomanip": [
+    "setw", "get_time", "put_money", "setiosflags", "setbase", "setfill", "quoted", "put_time", "get_money", "setprecision", "resetiosflags"
+  ],
+  "csetjmp": [
+    "jmp_buf", "longjmp"
+  ],
+  "cstddef": [
+    "byte", "max_align_t", "nullptr_t", "ptrdiff_t", "size_t"
+  ],
+  "new": [
+    "nothrow_t", "align_val_t", "launder", "nothrow", "get_new_handler", "bad_alloc", "set_new_handler", "hardware_destructive_interference_size", "hardware_constructive_interference_size", "new_handler", "destroying_delete_t", "destroying_delete", "bad_array_new_length"
+  ],
+  "condition_variable": [
+    "condition_variable_any", "notify_all_at_thread_exit", "cv_status", "condition_variable"
+  ],
+  "functional": [
+    "is_bind_expression", "greater", "logical_and", "bit_and", "multiplies", "plus", "equal_to", "ref", "cref", "identity", "logical_or", "boyer_moore_searcher", "negate", "divides", "function", "mem_fn", "default_searcher", "bind", "not_fn", "reference_wrapper", "modulus", "is_placeholder", "bit_xor", "bind_front", "boyer_moore_horspool_searcher", "minus", "logical_not", "bit_or", "hash", "bit_not", "bad_function_call", "invoke", "not_equal_to", "less", "less_equal", "greater_equal"
+  ],
+  "valarray": [
+    "mask_array", "valarray", "tanh", "gslice", "pow", "cos", "asin", "atan2", "acos", "gslice_array", "slice_array", "atan", "indirect_array", "exp", "sqrt", "log", "log10", "sinh", "slice", "abs", "cosh", "sin"
+  ],
+  "cstdlib": [
+    "mbstowcs", "quick_exit", "mbtowc", "getenv", "_Exit", "aligned_alloc", "bsearch", "exit", "wctomb", "atoi", "atol", "atoll", "at_quick_exit", "qsort", "strtol", "strtoll", "strtof", "strtod", "strtold", "atexit", "srand", "calloc", "malloc", "div", "ldiv", "lldiv", "wcstombs", "mblen", "rand", "realloc", "free", "abs", "labs", "llabs", "imaxabs", "strtoul", "strtoull", "system", "atof"
+  ],
+  "cmath": [
+    "abs", "fabs", "fabsf", "fabsl", "assoc_legendre", "assoc_legendref", "assoc_legendrel", "ceil", "ceilf", "ceill", "expm1", "expm1f", "expm1l", "remainder", "remainderf", "remainderl", "cyl_bessel_j", "cyl_bessel_jf", "cyl_bessel_jl", "scalbn", "scalbnf", "scalbnl", "scalbln", "scalblnf", "scalblnl", "ldexp", "ldexpf", "ldexpl", "log", "logf", "logl", "floor", "floorf", "floorl", "fpclassify", "acos", "acosf", "acosl", "legendre", "legendref", "legendrel", "sph_neumann", "sph_neumannf", "sph_neumannl", "atanh", "atanh", "atanhl", "log10", "log10f", "log10l", "isless", "sph_legendre", "sph_legendref", "sph_legendrel", "remquo", "remquof", "remquol", "fma", "fmaf", "fmal", "atan", "atanf", "atanl", "tanh", "tanhf", "tanhl", "islessgreater", "round", "roundf", "roundl", "lround", "lroundf", "lroundl", "llround", "llroundf", "cyl_bessel_k", "cyl_bessel_kf", "cyl_bessel_kl", "lgamma", "lgammaf", "lgammal", "isinf", "comp_ellint_3", "comp_ellint_3f", "comp_ellint_3l", "comp_ellint_2", "comp_ellint_2f", "comp_ellint_2l", "erf", "erff", "erfl", "cyl_neumann", "cyl_neumannf", "cyl_neumannl", "fmin", "fminf", "fminl", "isunordered", "sinh", "sinhf", "sinhl", "ellint_1", "ellint_1f", "ellint_1l", "ellint_2", "ellint_2f", "ellint_2l", "log2", "log2f", "log2l", "signbit", "fdim", "fdimf", "fdiml", "riemann_zeta", "riemann_zetaf", "riemann_zetal", "atan2", "atan2f", "atan2l", "fmax", "fmaxf", "fmaxl", "laguerre", "laguerref", "laguerrel", "acosh", "acoshf", "acoshl", "exp", "expf", "expl", "expint", "expintf", "expintl", "fmod", "fmodf", "fmodl", "ellint_3", "ellint_3f", "ellint_3l", "beta", "betaf", "betal", "modf", "modff", "modfl", "cosh", "coshf", "coshl", "tan", "tanf", "tanl", "cbrt", "cbrtf", "cbrtl", "frexp", "frexpf", "frexpl", "sqrt", "sqrtf", "sqrtl", "copysign", "copysignf", "copysignl", "isfinite", "comp_ellint_1", "comp_ellint_1f", "comp_ellint_1l", "isnan", "asin", "asinf", "asinl", "isgreaterequal", "isgreater", "rint", "rintf", "rintl", "lrint", "lrintf", "lrintl", "llrint", "llrintf", "ilogb", "ilogbf", "ilogbl", "nearbyint", "nearbyintf", "nearbyintl", "trunc", "truncf", "truncl", "assoc_laguerre", "assoc_laguerref", "assoc_laguerrel", "nextafter", "nextafterf", "nextafterl", "nexttoward", "nexttowardf", "nexttowardl", "asinh", "asinhf", "asinhl", "isnormal", "islessequal", "sph_bessel", "sph_besself", "sph_bessell", "cos", "cosf", "cosl", "nan", "nanf", "nanl", "pow", "powf", "powl", "hypot", "hypotf", "hypotl", "lerp", "logb", "logbf", "logbl", "sin", "sinf", "sinl", "exp2", "exp2f", "exp2l", "hermite", "hermitef", "hermitel", "erfc", "erfcf", "erfcl", "log1p", "log1pf", "log1pl", "cyl_bessel_i", "cyl_bessel_if", "cyl_bessel_il", "tgamma", "tgammaf", "tgammal"
+  ],
+  "memory": [
+    "pointer_safety", "allocate_shared", "allocate_shared_for_overwrite", "make_unique", "make_unique_for_overwrite", "pointer_traits", "uninitialized_construct_using_allocator", "uninitialized_default_construct_n", "declare_no_pointers", "addressof", "uninitialized_value_construct_n", "allocator_arg", "unique_ptr", "owner_less", "default_delete", "static_pointer_cast", "dynamic_pointer_cast", "const_pointer_cast", "reinterpret_pointer_cast", "destroy", "uninitialized_move", "uninitialized_fill", "align", "allocator_traits", "destroy_n", "uninitialized_move_n", "assume_aligned", "undeclare_no_pointers", "allocator", "construct_at", "make_shared", "make_shared_for_overwrite", "shared_ptr", "uninitialized_value_construct", "bad_weak_ptr", "to_address", "destroy_at", "declare_reachable", "uninitialized_copy_n", "get_pointer_safety", "allocator_arg_t", "uninitialized_fill_n", "undeclare_reachable", "uses_allocator_construction_args", "uninitialized_copy", "uninitialized_default_construct", "uses_allocator", "make_obj_using_allocator", "enable_shared_from_this", "weak_ptr"
+  ],
+  "cstdio": [
+    "feof", "scanf", "fscanf", "sscanf", "fwrite", "fread", "fgets", "ftell", "freopen", "tmpnam", "setbuf", "rewind", "fclose", "clearerr", "ungetc", "fseek", "fputs", "fflush", "vprintf", "vfprintf", "vsprintf", "vsnprintf", "printf", "fprintf", "sprintf", "snprintf", "fopen", "fputc", "putc", "setvbuf", "perror", "rename", "ferror", "getchar", "vscanf", "vfscanf", "vsscanf", "fgetc", "getc", "puts", "putchar", "tmpfile", "fgetpos", "fsetpos"
+  ],
+  "compare": [
+    "compare_weak_order_fallback", "strong_order", "weak_ordering", "partial_ordering", "three_way_comparable", "three_way_comparable_with", "partial_order", "is_eq", "is_neq", "is_lt", "is_gt", "is_lteq", "is_gteq", "weak_order", "common_comparison_category", "compare_three_way", "compare_three_way_result", "compare_strong_order_fallback", "compare_partial_order_fallback", "strong_ordering"
+  ],
+  "system_error": [
+    "system_error", "errc", "is_error_condition_enum", "error_category", "generic_category", "system_category", "error_code", "is_error_code_enum", "error_condition"
+  ],
+  "ctime": [
+    "tm", "difftime", "clock", "asctime", "strftime", "mktime", "time", "timespec", "ctime", "localtime", "timespec_get", "gmtime", "clock_t"
+  ],
+  "cuchar": [
+    "c8rtomb", "mbrtoc16", "c32rtomb", "mbstate_t", "c16rtomb", "mbrtoc8", "mbrtoc32"
+  ],
+  "algorithm": [
+    "find_end", "set_symmetric_difference", "rotate_copy", "make_heap", "nth_element", "all_of", "any_of", "none_of", "prev_permutation", "find", "find_if", "find_if_not", "unique_copy", "pop_heap", "search_n", "find", "find_if", "find_if_not", "search", "sample", "replace_copy", "replace_copy_if", "minmax_element", "is_heap_until", "copy_n", "iter_swap", "count", "count_if", "equal", "for_each", "remove_copy", "remove_copy_if", "equal_range", "swap_ranges", "replace", "replace_if", "set_intersection", "transform", "set_union", "binary_search", "upper_bound", "set_difference", "copy_backward", "clamp", "is_sorted", "partition_point", "generate", "max_element", "remove", "remove_if", "stable_sort", "is_partitioned", "reverse_copy", "fill", "swap", "replace_copy", "replace_copy_if", "is_permutation", "adjacent_find", "min_element", "unique", "next_permutation", "stable_partition", "mismatch", "lexicographical_compare_three_way", "minmax", "fill_n", "move_backward", "reverse", "push_heap", "copy", "copy_if", "random_shuffle", "shuffle", "inplace_merge", "max", "generate_n", "min", "find", "find_if", "find_if_not", "for_each_n", "lower_bound", "partition", "sort_heap", "is_heap", "is_sorted_until", "partial_sort", "partition_copy", "find_first_of", "merge", "rotate", "partial_sort_copy", "sort", "shift_left", "shift_right", "includes", "lexicographical_compare", "count", "count_if"
+  ],
+  "type_traits": [
+    "is_move_constructible", "is_trivially_move_constructible", "is_nothrow_move_constructible", "type_identity", "void_t", "is_trivial", "is_unbounded_array", "is_constructible", "is_trivially_constructible", "is_nothrow_constructible", "is_array", "is_compound", "is_function", "remove_all_extents", "is_signed", "negation", "is_member_function_pointer", "is_pointer_interconvertible_with_class", "is_default_constructible", "is_trivially_default_constructible", "is_nothrow_default_constructible", "is_class", "is_corresponding_member", "remove_extent", "is_floating_point", "is_copy_assignable", "is_trivially_copy_assignable", "is_nothrow_copy_assignable", "is_bounded_array", "underlying_type", "remove_cvref", "add_lvalue_reference", "add_rvalue_reference", "is_final", "is_standard_layout", "is_scalar", "make_unsigned", "is_assignable", "is_trivially_assignable", "is_nothrow_assignable", "is_constant_evaluated", "result_of", "invoke_result", "alignment_of", "has_unique_object_representations", "is_arithmetic", "make_signed", "add_pointer", "is_abstract", "enable_if", "is_object", "is_same", "unwrap_reference", "unwrap_ref_decay", "is_rvalue_reference", "aligned_storage", "is_trivially_copyable", "has_virtual_destructor", "remove_reference", "is_member_object_pointer", "is_move_assignable", "is_trivially_move_assignable", "is_nothrow_move_assignable", "is_convertible", "is_nothrow_convertible", "disjunction", "is_fundamental", "add_cv", "add_const", "add_volatile", "rank", "extent", "is_enum", "decay", "is_pointer_interconvertible_base_of", "is_base_of", "is_aggregate", "remove_cv", "remove_const", "remove_volatile", "is_pod", "conditional", "is_swappable_with", "is_swappable", "is_nothrow_swappable_with", "is_nothrow_swappable", "integral_constant", "is_destructible", "is_trivially_destructible", "is_nothrow_destructible", "is_layout_compatible", "conjunction", "is_empty", "is_null_pointer", "remove_pointer", "is_union", "common_reference", "aligned_union", "is_lvalue_reference", "is_pointer", "is_volatile", "is_copy_constructible", "is_trivially_copy_constructible", "is_nothrow_copy_constructible", "is_reference", "is_unsigned", "is_invocable", "is_invocable_r", "is_nothrow_invocable", "is_nothrow_invocable_r", "is_member_pointer", "is_const", "is_integral", "is_polymorphic", "is_void", "common_type"
+  ],
+  "mutex": [
+    "lock_guard", "defer_lock", "try_to_lock", "adopt_lock", "unique_lock", "mutex", "defer_lock_t", "try_to_lock_t", "adopt_lock_t", "once_flag", "call_once", "try_lock", "recursive_mutex", "timed_mutex", "recursive_timed_mutex", "lock"
+  ],
+  "vector": [
+    "vector", "erase", "erase_if"
+  ],
+  "stdexcept": [
+    "logic_error", "underflow_error", "overflow_error", "out_of_range", "range_error", "domain_error", "invalid_argument", "runtime_error", "length_error"
+  ],
+  "numeric": [
+    "reduce", "inclusive_scan", "midpoint", "transform_exclusive_scan", "transform_inclusive_scan", "adjacent_difference", "accumulate", "gcd", "iota", "transform_reduce", "inner_product", "lcm", "partial_sum", "exclusive_scan"
+  ],
+  "iterator": [
+    "unreachable_sentinel_t", "unreachable_sentinel", "istreambuf_iterator", "ostreambuf_iterator", "front_insert_iterator", "iterator_traits", "prev", "next", "input_iterator_tag", "output_iterator_tag", "forward_iterator_tag", "bidirectional_iterator_tag", "random_access_iterator_tag", "contiguous_iterator_tag", "move_iterator", "insert_iterator", "iterator", "move_sentinel", "make_reverse_iterator", "back_inserter", "istream_iterator", "reverse_iterator", "weakly_incrementable", "iter_value_t", "iter_reference_t", "iter_difference_t", "iter_rvalue_reference_t", "iter_common_reference_t", "default_sentinel_t", "default_sentinel", "distance", "front_inserter", "incrementable", "incrementable_traits", "inserter", "advance", "back_insert_iterator", "indirectly_readable_traits", "make_move_iterator", "ostream_iterator"
+  ],
+  "complex": [
+    "polar", "proj", "arg", "acosh", "atanh", "real", "norm", "conj", "complex", "asinh", "imag"
+  ],
+  "utility": [
+    "in_range", "as_const", "piecewise_construct_t", "move_if_noexcept", "move", "pair", "integer_sequence", "declval", "exchange", "make_pair", "in_place", "in_place_type", "in_place_index", "in_place_t", "in_place_type_t", "in_place_index_t", "forward"
+  ],
+  "variant": [
+    "variant_size", "variant_size_v", "variant_alternative", "variant_alternative_t", "bad_variant_access", "get", "variant", "monostate", "variant_npos", "get_if", "holds_alternative", "visit"
+  ],
+  "ios": [
+    "unitbuf", "nounitbuf", "left", "right", "internal", "uppercase", "nouppercase", "basic_ios", "showpoint", "noshowpoint", "make_error_condition", "dec", "hex", "oct", "boolalpha", "noboolalpha", "io_errc", "skipws", "noskipws", "streamsize", "showbase", "noshowbase", "fixed", "scientific", "hexfloat", "defaultfloat", "iostream_category", "showpos", "noshowpos", "fpos", "make_error_code", "ios_base", "streamoff"
+  ],
+  "cstring": [
+    "strncmp", "strlen", "strchr", "strncat", "strstr", "memmove", "strcspn", "strrchr", "strcat", "strtok", "memset", "strxfrm", "strcmp", "strpbrk", "memcpy", "strspn", "strcoll", "strcpy", "memcmp", "strncpy", "strerror", "memchr"
+  ],
+  "concepts": [
+    "equality_comparable", "equality_comparable_with", "regular", "constructible_from", "strict_weak_order", "unsigned_integral", "relation", "predicate", "derived_from", "move_constructible", "destructible", "semiregular", "signed_integral", "invocable", "regular_invocable", "boolean", "integral", "convertible_to", "floating_point", "totally_ordered", "totally_ordered_with", "movable", "copy_constructible", "same_as", "default_initializable", "swappable", "swappable_with", "equivalence_relation", "common_with", "copyable", "common_reference_with", "assignable_from"
+  ],
+  "future": [
+    "future", "launch", "future_errc", "future_status", "shared_future", "packaged_task", "async", "future_category", "future_error", "promise"
+  ],
+  "random": [
+    "normal_distribution", "random_device", "negative_binomial_distribution", "discard_block_engine", "cauchy_distribution", "chi_squared_distribution", "uniform_real_distribution", "student_t_distribution", "piecewise_constant_distribution", "weibull_distribution", "poisson_distribution", "exponential_distribution", "mersenne_twister_engine", "binomial_distribution", "discrete_distribution", "linear_congruential_engine", "generate_canonical", "geometric_distribution", "seed_seq", "uniform_random_bit_generator", "independent_bits_engine", "fisher_f_distribution", "bernoulli_distribution", "uniform_int_distribution", "lognormal_distribution", "piecewise_linear_distribution", "shuffle_order_engine", "extreme_value_distribution", "subtract_with_carry_engine", "gamma_distribution"
+  ],
+  "regex": [
+    "regex_search", "regex_error", "regex_match", "match_results", "regex_token_iterator", "regex_traits", "regex_iterator", "basic_regex", "sub_match", "regex_replace"
+  ],
+  "strstream": [
+    "ostrstream", "istrstream", "strstream", "strstreambuf"
+  ],
+  "format": [
+    "basic_format_args", "format", "formatted_size", "vformat", "format_to_n", "format_to", "basic_format_arg", "make_format_args", "make_wformat_args", "basic_format_context", "basic_format_parse_context", "vformat_to", "formatter", "visit_format_arg", "format_error"
+  ],
+  "atomic": [
+    "atomic_notify_one", "atomic_fetch_sub", "atomic_fetch_sub_explicit", "atomic_wait", "atomic_wait_explicit", "atomic_flag", "atomic_flag_notify_all", "atomic_flag_wait", "atomic_flag_wait_explicit", "atomic_ref", "atomic", "atomic_init", "atomic_flag_test", "atomic_flag_test_explicit", "atomic_fetch_xor", "atomic_fetch_xor_explicit", "atomic_signal_fence", "atomic_fetch_add", "atomic_fetch_add_explicit", "atomic_fetch_and", "atomic_fetch_and_explicit", "atomic_thread_fence", "kill_dependency", "memory_order", "atomic_notify_all", "atomic_fetch_or", "atomic_fetch_or_explicit", "atomic_flag_clear", "atomic_flag_clear_explicit", "atomic_flag_notify_one", "atomic_flag_test_and_set", "atomic_flag_test_and_set_explicit"
+  ],
+  "array": [
+    "begin", "cbegin", "array", "rend", "crend", "to_array", "size", "ssize", "rbegin", "crbegin", "data", "end", "cend", "empty"
+  ],
+  "ratio": [
+    "ratio_less_equal", "ratio_multiply", "ratio_greater_equal", "ratio_equal", "ratio_not_equal", "ratio_greater", "ratio_subtract", "ratio_add", "ratio_less", "ratio_divide"
+  ],
+  "limits": [
+    "float_round_style", "float_denorm_style", "numeric_limits"
+  ],
+  "tuple": [
+    "tuple_size", "forward_as_tuple", "tie", "ignore", "tuple_cat", "make_from_tuple", "tuple_element", "tuple", "make_tuple", "apply"
+  ],
+  "ostream": [
+    "endl", "flush", "basic_ostream", "ends", "flush_emit", "emit_on_flush", "no_emit_on_flush"
+  ],
+  "scoped_allocator": [
+    "scoped_allocator_adaptor"
+  ],
+  "any": [
+    "bad_any_cast", "any"
+  ],
+  "stop_token": [
+    "stop_token", "stop_callback", "stop_source"
+  ],
+  "string": [
+    "char_traits", "basic_string", "to_string"
+  ],
+  "bit": [
+    "countr_zero", "rotl", "endian", "bit_width", "countr_one", "countl_one", "rotr", "bit_cast", "popcount", "countl_zero", "bit_ceil", "has_single_bit", "bit_floor"
+  ],
+  "syncstream": [
+    "basic_syncbuf", "basic_osyncstream"
+  ],
+  "sstream": [
+    "basic_ostringstream", "basic_stringstream", "basic_istringstream", "basic_stringbuf"
+  ],
+  "csignal": [
+    "raise", "signal", "sig_atomic_t"
+  ],
+  "optional": [
+    "optional", "nullopt", "bad_optional_access", "nullopt_t", "make_optional"
+  ],
+  "cfenv": [
+    "feraiseexcept", "fegetenv", "fesetenv", "feholdexcept", "feupdateenv", "fegetround", "fesetround", "fegetexceptflag", "fesetexceptflag", "fetestexcept", "feclearexcept"
+  ],
+  "exception": [
+    "rethrow_if_nested", "get_terminate", "set_terminate", "bad_exception", "make_exception_ptr", "terminate_handler", "exception_ptr", "throw_with_nested", "nested_exception", "exception", "rethrow_exception", "terminate", "current_exception", "uncaught_exception", "uncaught_exceptions"
+  ],
+  "span": [
+    "span", "dynamic_extent"
+  ],
+  "charconv": [
+    "from_chars", "to_chars", "chars_format"
+  ],
+  "queue": [
+    "priority_queue", "queue"
+  ],
+  "cinttypes": [
+    "wcstoimax", "wcstoumax", "strtoimax", "strtoumax"
+  ],
+  "iostream": [
+    "cin", "wcin", "clog", "wclog", "cerr", "wcerr", "cout", "wcout"
+  ],
+  "unordered_map": [
+    "unordered_map", "unordered_multimap"
+  ],
+  "unordered_set": [
+    "unordered_multiset", "unordered_set"
+  ],
+  "clocale": [
+    "localeconv", "setlocale", "lconv"
+  ],
+  "stack": [
+    "stack"
+  ],
+  "codecvt": [
+    "codecvt_mode", "codecvt_utf8", "codecvt_utf8_utf16", "codecvt_utf16"
+  ],
+  "bitset": [
+    "bitset"
+  ],
+  "initializer_list": [
+    "initializer_list"
+  ],
+  "shared_mutex": [
+    "shared_mutex", "shared_timed_mutex", "shared_lock"
+  ],
+  "map": [
+    "multimap", "map"
+  ],
+  "istream": [
+    "basic_istream", "ws", "basic_iostream"
+  ],
+  "barrier": [
+    "barrier"
+  ],
+  "forward_list": [
+    "forward_list"
+  ],
+  "execution": [
+    "is_execution_policy"
+  ],
+  "typeinfo": [
+    "bad_cast", "type_info", "bad_typeid"
+  ],
+  "streambuf": [
+    "basic_streambuf"
+  ],
+  "typeindex": [
+    "type_index"
+  ],
+  "thread": [
+    "jthread", "thread"
+  ],
+  "cstdarg": [
+    "va_list"
+  ],
+  "set": [
+    "set", "multiset"
+  ],
+  "memory_resource": [
+    "pmr"
+  ],
+  "latch": [
+    "latch"
+  ],
+  "deque": [
+    "deque"
+  ],
+  "semaphore": [
+    "counting_semaphore", "binary_semaphore"
+  ],
+  "source_location": [
+    "source_location"
+  ],
+  "list": [
+    "list"
+  ],
+  "string_view": [
+    "basic_string_view"
+  ]
+}
